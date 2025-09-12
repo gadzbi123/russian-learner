@@ -72,4 +72,4 @@ The app uses the browser's built-in Speech Synthesis API for pronunciation. For 
 
 ## License
 
-MIT License - feel free to use this project for educational purposes!
+GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
