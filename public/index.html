@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Russian - Letters & Pronunciation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🇷🇺 Learn Russian</h1>
+            <p>Master the Cyrillic alphabet and pronunciation</p>
+        </header>
+
+        <nav class="tabs">
+            <button class="tab-btn active" data-tab="letters">Letters</button>
+            <button class="tab-btn" data-tab="words">Words</button>
+            <button class="tab-btn" data-tab="sentences">Sentences</button>
+        </nav>
+
+        <main>
+            <!-- Letters Section -->
+            <section id="letters" class="tab-content active">
+                <h2>Russian Alphabet (Cyrillic)</h2>
+                <div class="alphabet-grid" id="alphabetGrid">
+                    <!-- Letters will be populated by JavaScript -->
+                </div>
+                
+                <div class="letter-detail" id="letterDetail" style="display: none;">
+                    <div class="letter-card">
+                        <div class="letter-display" id="currentLetter"></div>
+                        <div class="letter-info">
+                            <h3 id="letterName"></h3>
+                            <p><strong>Sound:</strong> <span id="letterSound"></span></p>
+                            <p><strong>Example:</strong> <span id="letterExample"></span></p>
+                            <button class="play-btn" id="playSound">🔊 Play Sound</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Words Section -->
+            <section id="words" class="tab-content">
+                <h2>Practice Words</h2>
+                <div class="word-practice">
+                    <div class="word-card" id="wordCard">
+                        <div class="russian-word" id="russianWord">мама</div>
+                        <div class="pronunciation" id="pronunciation">[mama]</div>
+                        <div class="translation" id="translation">mothers</div>
+                        <button class="play-btn" id="playWordSound">🔊 Play</button>
+                    </div>
+                    <div class="word-controls">
+                        <button id="prevWord">← Previous</button>
+                        <button id="nextWord">Next →</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sentences Section -->
+            <section id="sentences" class="tab-content">
+                <h2>Practice Sentences</h2>
+                <div class="sentence-practice">
+                    <div class="sentence-card" id="sentenceCard">
+                        <div class="russian-sentence" id="russianSentence">Привет, как дела?</div>
+                        <div class="pronunciation" id="sentencePronunciation">[Privet, kak dela?]</div>
+                        <div class="translation" id="sentenceTranslation">Hello, how are you?</div>
+                        <button class="play-btn" id="playSentenceSound">🔊 Play</button>
+                    </div>
+                    <div class="sentence-controls">
+                        <button id="prevSentence">← Previous</button>
+                        <button id="nextSentence">Next →</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
