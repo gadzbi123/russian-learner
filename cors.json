@@ -1,0 +1,18 @@
+[
+  {
+    "origin": [
+      "https://ruski.gadzbi.com",
+      "https://www.ruski.gadzbi.com"
+    ],
+    "method": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ],
+    "responseHeader": [
+      "Content-Type",
+      "Access-Control-Allow-Origin"
+    ],
+    "maxAgeSeconds": 3600
+  }
+]
